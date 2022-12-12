@@ -4,13 +4,15 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron main.js"
+    "start": "electron main.js",
+    "build": "electron-packager ./builds/ translator --platform=win32 --arch=x64"
   },
   "keywords": [],
   "author": "Fillipe143",
   "license": "MIT",
   "devDependencies": {
     "electron": "^22.0.0",
+    "electron-packager": "^17.1.1",
     "electron-reload": "^2.0.0-alpha.1"
   }
 }
